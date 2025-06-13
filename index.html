@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rent-A-Cloud</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 50%, #98FB98 100%);
+            font-family: Verdana;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .sky-container {
+            text-align: center;
+            padding: 30px;
+        }
+        .cloud {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .cloud::before {
+            content: '☁️';
+            font-size: 30px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h1 {
+            color: #4682B4;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 2.5em;
+        }
+        .pricing {
+            background: rgba(255,255,255,0.8);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 30px auto;
+            max-width: 500px;
+        }
+        .weather-warning {
+            background: #FFE4B5;
+            border: 2px dashed #FF8C00;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="sky-container">
+        <h1>☁️ Rent-A-Cloud ☁️</h1>
+        <p style="font-size: 18px; color: #2F4F4F;">
+            <em>"Bringing the sky closer to you!"</em>
+        </p>
+        
+        <div class="cloud">
+            <h3>Cumulus Special</h3>
+            <p>Perfect for casual floating</p>
+            <strong>$29/day</strong>
+        </div>
+        
+        <div class="cloud">
+            <h3>Nimbus Premium</h3>
+            <p>Rain feature included!</p>
+            <strong>$49/day</strong>
+        </div>
+        
+        <div class="cloud">
+            <h3>Cirrus Deluxe</h3>
+            <p>High-altitude experience</p>
+            <strong>$79/day</strong>
+        </div>
+        
+        <div class="pricing">
+            <h2>What's Included:</h2>
+            <ul>
+                <li>Free cloud positioning</li>
+                <li>Basic weather control</li>
+                <li>24/7 sky support</li>
+                <li>Complimentary rainbow (on sunny days)</li>
+                <li>Lightning protection insurance</li>
+            </ul>
+        </div>
+        
+        <div class="weather-warning">
+            <strong>⚠️ Weather Warning:</strong> 
+            Clouds may occasionally wander off. GPS tracking available for $10 extra.
+        </div>
+        
+        <p>
+            <strong>Book now and get a free umbrella!</strong><br>
+            <em>(Terms and conditions apply. Clouds not responsible for unexpected precipitation.)</em>
+        </p>
+    </div>
+</body>
+</html>
